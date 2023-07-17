@@ -7,13 +7,13 @@
     --primary-color: #3a3a3a;
     --btn-color: #E02C6D;
 }
-.btn-primary{
+
+.btn-primary {
     border-radius: 41px;
     background: #E02C6D;
     color: #fff;
     padding: 10px 16px;
     border: none
-
 }
 
 /* Header styles  Nav*/
@@ -41,46 +41,188 @@ nav li {
     font-size: 1.5rem;
     font-weight: 700;
 }
+
 /* header main styles */
-.header-content{
+.header-content {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 4.4rem 11.25rem;
     gap: 20px;
 }
-.header-title{
+
+.header-title {
     color: var(--primary-color);
     font-weight: 700;
     font-size: 3rem;
     max-width: 550px;
     margin-bottom: 1rem;
 }
-.header-desc{
+
+.header-desc {
     color: var(--primary-color);
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
+
+/* main :- sponsors section style */
+.sponsors-img {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 12.5rem;
+}
+
+/* main:- collections styles */
+.collection-title {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 6.25rem auto 3rem;
+}
+
+.card img {
+    width: 18.75rem;
+    height: 16rem;
+}
+
+.collections {
+    margin: 0px 12.5rem;
+
+}
+
+.collections-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    width: 19rem;
+}
+
+.see-more {
+    text-align: right;
+    font-weight: 700;
+    color: var(--btn-color);
+    margin-top: 3rem;
+}
+
+/* feature styles */
+.feature-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 6.25rem;
+}
+
+.feature-title {
+    color: #0A0826;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.feature-desc {
+    color: #6C6C6C;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+/* footer styles */
+footer{
+    background: #0A0826;
+    
+}
+
+.footer-container{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 3rem;
+}
+.footer-icon{
+    margin-top: 1.5rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.footer-icon i{
+    background-color: #FFF;
+    margin-left: 10px;
+}
+
+
+
+
 /* @media query for mobile */
 @media screen and (max-width: 576px) {
-    nav{
+    nav {
         flex-direction: column;
         margin-top: 10px;
     }
-    .header-content{
+
+    .header-content {
         flex-direction: column-reverse;
         margin: 0px;
     }
-    .header-title{
+
+    .header-title {
         font-size: 1.8rem;
         text-align: center;
     }
-    .header-desc{
+
+    .header-desc {
         text-align: center;
     }
-    .btn-primary{
+
+    .btn-primary {
         margin-left: 8.5rem;
+    }
+
+    .sponsors-img {
+        flex-wrap: wrap;
+        margin: 1rem auto;
+        gap: 20px;
+    }
+
+    .collections {
+        margin: 0px auto;
+    }
+
+    .collections-card {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin: 0px auto;
+    }
+    .feature-container{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0px;
+    }
+    .feature-title{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .feature-desc{
+        text-align: center;
+    }
+    .feature-info button{
+        margin-bottom: 1rem;
+    }
+    .feature-img img{
+        width: 18.75rem;
+        height: 16rem;
+        padding: 3rem;
     }
 
 
