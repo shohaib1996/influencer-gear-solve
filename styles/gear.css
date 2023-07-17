@@ -6,6 +6,7 @@
     font-family: 'Poppins', sans-serif;
     --primary-color: #3a3a3a;
     --btn-color: #E02C6D;
+    box-sizing: border-box;
 }
 
 .btn-primary {
@@ -104,7 +105,7 @@ nav li {
     background: #FFF;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     padding: 10px;
-    width: 19rem;
+    width: 19.75rem;
 }
 
 .see-more {
@@ -120,6 +121,7 @@ nav li {
     justify-content: space-around;
     align-items: center;
     margin: 6.25rem;
+    gap: 2.5rem;
 }
 
 .feature-title {
@@ -134,6 +136,7 @@ nav li {
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    width: 500px;
 }
 /* footer styles */
 footer{
@@ -156,7 +159,8 @@ footer{
 }
 .footer-icon i{
     background-color: #FFF;
-    margin-left: 10px;
+    margin-left: 1rem;
+    
 }
 
 
@@ -164,6 +168,7 @@ footer{
 
 /* @media query for mobile */
 @media screen and (max-width: 576px) {
+
     nav {
         flex-direction: column;
         margin-top: 10px;
@@ -211,10 +216,11 @@ footer{
     }
     .feature-title{
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .feature-desc{
         text-align: center;
+        width: 22rem;
     }
     .feature-info button{
         margin-bottom: 1rem;
@@ -224,6 +230,6 @@ footer{
         height: 16rem;
         padding: 3rem;
     }
-
+    
 
 }
